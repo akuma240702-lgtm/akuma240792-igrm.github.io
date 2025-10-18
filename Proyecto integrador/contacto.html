@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Wiki del Diseño Multimedia</title>
+    <meta name="description" content="Página de contacto para enviar sugerencias, reportar errores o colaborar con la Wiki del Diseño Multimedia.">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">WIKI</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#topics-grid-section">Temas</a></li>
+                <li><a href="glosario.html">Glosario</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar concepto...">
+            <button type="submit">🔍</button>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Tu *feedback* es esencial. Utiliza este formulario para enviarnos sugerencias, reportar errores en el contenido o consultar sobre el proyecto.</p>
+            
+<form action="https://formspree.io/f/YOUR_FORMSPREE_HASH" method="POST" class="contact-form">
+  
+                
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="sugerencia">Sugerencia de Contenido</option>
+                    <option value="error">Reporte de Error o Enlace Roto</option>
+                    <option value="colaboracion">Consulta sobre Colaboración</option>
+                    <option value="general">Consulta General</option>
+                </select>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
