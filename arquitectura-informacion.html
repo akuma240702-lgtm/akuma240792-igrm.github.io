@@ -14,13 +14,20 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li>
+                <li class="active"><a href="index.html#topics-grid-section" class="active">Temas</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-box">...</div>
-    </header>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+        </header>
 
     <main class="article-container">
         <aside class="toc-sidebar">
@@ -38,16 +45,36 @@
             <h1 id="concepto-ia">Arquitectura de la Información (IA)</h1>
             <p class="intro-text">La Arquitectura de la Información (IA) es el arte y la ciencia de organizar, etiquetar y estructurar el contenido de un sitio web o aplicación para maximizar la usabilidad y la encontrabilidad (que el usuario pueda encontrar lo que busca).</p>
 
+            <section>
+                <h2>1. El Rol de la IA</h2>
+                <p>La IA es el plano o esqueleto de un producto digital. Su objetivo es reducir la **carga cognitiva** del usuario, haciendo que la información parezca intuitivamente donde debería estar. Si un usuario no puede encontrar información rápidamente, la IA ha fallado.</p>
+                <p>La IA se basa en tres círculos: **Contexto** (metas del negocio), **Contenido** (tipos de información) y **Usuario** (necesidades de información).</p>
+            </section>
+
             <section id="componentes">
                 <h2>2. Los Cuatro Componentes de la IA</h2>
                 <ol>
-                    <li>**Sistemas de Organización:** Cómo se agrupan las páginas...</li>
-                    </ol>
+                    <li>**Sistemas de Organización:** Cómo se agrupan las páginas (ej. por tema, por audiencia, cronológico).</li>
+                    <li>**Sistemas de Etiquetado:** Cómo se representan los contenidos (nombres, títulos, etiquetas de menú).</li>
+                    <li>**Sistemas de Navegación:** Cómo se mueven los usuarios entre las páginas (menús, breadcrumbs, enlaces internos). (<a href="diseno-navegacion.html">Ver Diseño de Navegación</a>)</li>
+                    <li>**Sistemas de Búsqueda:** Herramientas que permiten buscar directamente el contenido.</li>
+                </ol>
+            </section>
+
+            <section id="estructura">
+                <h2>3. Tipos de Estructuras Comunes</h2>
+                <ul>
+                    <li>**Jerárquica:** (Modelo de árbol) La más común. Organiza el contenido de lo general a lo específico.</li>
+                    <li>**Secuencial:** El usuario sigue una ruta fija (ej. un tutorial o proceso de compra).</li>
+                    <li>**Matricial:** Permite al usuario elegir su propia ruta (ej. por fecha o por tema).</li>
+                </ul>
             </section>
         </article>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
