@@ -14,13 +14,20 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li>
+                <li class="active"><a href="index.html#topics-grid-section" class="active">Temas</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-box">...</div>
-    </header>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+        </header>
 
     <main class="article-container">
         <aside class="toc-sidebar">
@@ -38,16 +45,33 @@
             <h1 id="concepto">Design Thinking</h1>
             <p class="intro-text">Design Thinking (Pensamiento de Diseño) es una metodología para la resolución creativa de problemas y la innovación, enfocada en la comprensión profunda de las necesidades humanas y la generación de soluciones centradas en el usuario.</p>
 
+            <section>
+                <h2>1. ¿Qué es y Principios?</h2>
+                <p>No es exclusivo del diseño; es un *mindset* que utiliza herramientas propias de los diseñadores para abordar retos complejos. Es un proceso **iterativo, no lineal**, que busca balancear lo que es **deseable** (por el usuario), **factible** (tecnológicamente) y **viable** (económicamente).</p>
+                <p>Sus tres principios clave son: **Empatía**, **Generación de Ideas** y **Experimentación**.</p>
+            </section>
+
             <section id="fases">
                 <h2>2. Las Cinco Fases del Design Thinking</h2>
                 <ol>
                     <li>**Empatizar:** Comprender al usuario, sus necesidades y contexto.</li>
-                    </ol>
+                    <li>**Definir:** Sintetizar la información para establecer el problema central (*Point of View*).</li>
+                    <li>**Idear:** Generar la mayor cantidad de soluciones posibles (tormenta de ideas).</li>
+                    <li>**Prototipar:** Construir versiones simplificadas de las soluciones para probarlas rápidamente.</li>
+                    <li>**Evaluar (o Testear):** Probar el prototipo con usuarios reales para obtener *feedback* y refinar la solución.</li>
+                </ol>
+            </section>
+
+            <section id="aplicacion">
+                <h2>3. Aplicación en Diseño Multimedia</h2>
+                <p>En diseño web y multimedia, el Design Thinking es esencial para el inicio de cualquier proyecto. Ayuda a evitar suposiciones y asegura que el producto final esté alineado con la <a href="diseno-centrado-usuario.html">filosofía DCU</a>, llevando a una mejor <a href="experiencia-usuario.html">Experiencia de Usuario</a>.</p>
             </section>
         </article>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
