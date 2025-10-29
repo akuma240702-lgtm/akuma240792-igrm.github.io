@@ -14,13 +14,20 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li>
+                <li class="active"><a href="index.html#topics-grid-section" class="active">Temas</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-box">...</div>
-    </header>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+        </header>
 
     <main class="article-container">
         <aside class="toc-sidebar">
@@ -38,16 +45,41 @@
             <h1 id="fundamentos-nav">Diseño de Navegación</h1>
             <p class="intro-text">El Diseño de Navegación se refiere a cómo los usuarios se mueven por un sitio web. Es la manifestación práctica de la <a href="arquitectura-informacion.html">Arquitectura de la Información</a>, buscando que el usuario siempre sepa dónde está, dónde ha estado y a dónde puede ir.</p>
 
+            <section>
+                <h2>1. Fundamentos y Objetivos</h2>
+                <p>El principal objetivo de la navegación es la **encontrabilidad**. Una buena navegación es:</p>
+                <ul>
+                    <li>**Clara:** El significado del enlace es obvio.</li>
+                    <li>**Consistente:** La ubicación y el estilo del menú no cambian.</li>
+                    <li>**Eficiente:** Requiere el menor número de clics posible para llegar al destino.</li>
+                </ul>
+                <p>La navegación es una de las mayores influencias en la <a href="experiencia-usuario.html">Experiencia de Usuario</a>.</p>
+            </section>
+
             <section id="tipos-nav">
                 <h2>2. Tipos de Sistemas de Navegación</h2>
                 <ul>
                     <li>**Global:** Persiste en todo el sitio (ej. el menú principal de esta wiki).</li>
-                    </ul>
+                    <li>**Local:** Muestra el contenido dentro de una sección o categoría específica (ej. submenús o la barra lateral TOC).</li>
+                    <li>**Contextual:** Enlaces incrustados en el cuerpo del texto que guían a contenido relacionado (ej. los enlaces entre los temas de esta wiki).</li>
+                    <li>**Suplementaria:** Mapas del sitio, índices alfabéticos o la barra de búsqueda.</li>
+                </ul>
+            </section>
+
+            <section id="patrones">
+                <h2>3. Patrones de Usabilidad Comunes</h2>
+                <ul>
+                    <li>**Breadcrumbs (Migas de Pan):** Muestra la ruta jerárquica hasta la ubicación actual del usuario.</li>
+                    <li>**Menú Hamburguesa:** Patrón común en el diseño <a href="diseno-web.html">responsive</a> para ocultar la navegación principal en dispositivos móviles.</li>
+                    <li>**Footer Navigation:** Repite enlaces importantes en la parte inferior de la página.</li>
+                </ul>
             </section>
         </article>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
