@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki del Diseño Multimedia | Tu Guía de Fundamentos</title>
     <meta name="description" content="Wiki colaborativa para estudiantes de diseño multimedia sobre UX, diseño web, design thinking y más.">
-    
     <link rel="stylesheet" href="estilos.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,11 +20,15 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        
         <div class="search-box">
-            <input type="text" placeholder="Buscar concepto...">
-            <button type="submit">🔍</button>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
         </div>
-    </header>
+        </header>
 
     <section class="hero">
         <div class="hero-content">
