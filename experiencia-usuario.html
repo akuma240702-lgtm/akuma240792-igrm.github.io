@@ -12,19 +12,23 @@
 
     <header class="main-header">
         <div class="logo">WIKI</div>
-        <nav class="main-nav">
+        <nav class="main-nav">a
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section">Temas</a></li>
+                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li> 
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        
         <div class="search-box">
-            <input type="text" placeholder="Buscar concepto...">
-            <button type="submit">🔍</button>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
         </div>
-    </header>
+        </header>
 
     <main class="article-container">
         
@@ -34,25 +38,63 @@
                 <ul>
                     <li><a href="#definicion">1. ¿Qué es UX?</a></li>
                     <li><a href="#historia">2. Breve Historia</a></li>
-                    <li><a href="#pilares">3. Elementos Clave</a></li>
+                    <li><a href="#pilares">3. Elementos Clave de UX</a></li>
                     <li><a href="#proceso-ux">4. El Proceso de Diseño UX</a></li>
-                    <li><a href="#dcu-relacion">5. UX y DCU</a></li>
+                    <li><a href="#dcu-relacion">5. UX y Diseño Centrado en el Usuario</a></li>
                 </ul>
             </nav>
         </aside>
 
         <article class="article-content">
             <h1 id="definicion">Experiencia de Usuario (UX)</h1>
-            <p class="intro-text">La Experiencia de Usuario (UX) es el conjunto de sensaciones y emociones que tiene un usuario al interactuar con un sistema, producto o servicio digital. Es el diseño centrado en la persona.</p>
+            <p class="intro-text">La Experiencia de Usuario (UX) es el conjunto de sensaciones y emociones que tiene un usuario al interactuar con un producto, sistema o servicio digital. Va más allá de la simple usabilidad, abarcando la percepción total de la interacción.</p>
 
             <section>
-                <h2>1. ¿Qué es UX?</h2>
-                <p>Es un enfoque holístico para diseñar productos que sean **útiles, usables y deseables**...</p>
-                </section>
+                <h2>1. ¿Qué es la Experiencia de Usuario (UX)?</h2>
+                <p>En el corazón del diseño moderno, la UX se enfoca en cómo se siente una persona cuando interactúa con un producto o servicio. No se limita a la interfaz visual (UI), sino que considera todo el viaje del usuario, desde la primera interacción hasta la consecución de sus objetivos.</p>
+                <p>Un buen diseño UX asegura que el producto sea:</p>
+                <ul>
+                    <li>**Útil:** Resuelve un problema o satisface una necesidad real del usuario.</li>
+                    <li>**Usable:** Es fácil de aprender y de manejar, eficiente y no causa frustración.</li>
+                    <li>**Deseable:** Genera una conexión emocional y es atractivo para el usuario.</li>
+                    <li>**Encontrable:** El contenido y las funcionalidades son fáciles de localizar.</li>
+                    <li>**Accesible:** Puede ser utilizado por personas con diversas capacidades.</li>
+                </ul>
+            </section>
+
+            <section id="historia">
+                <h2>2. Breve Historia de la UX</h2>
+                <p>Aunque el término "Experiencia de Usuario" fue acuñado por <a href="glosario.html#Norman">Don Norman</a> en los años 90, los principios detrás de la UX tienen raíces mucho más antiguas. En la era digital, la UX se consolidó como una disciplina fundamental para el desarrollo de software y sitios web.</p>
+            </section>
 
             <section id="pilares">
                 <h2>3. Elementos Clave de una Buena UX</h2>
-                <p>Para construir una experiencia de usuario sólida, se consideran diversos aspectos...</p>
+                <p>Para construir una experiencia de usuario sólida, se consideran diversos aspectos:</p>
+                <ul>
+                    <li>**Investigación de Usuarios:** Comprender a quién se diseña mediante entrevistas, encuestas y observación.</li>
+                    <li>**Arquitectura de la Información (IA):** Organizar el contenido de manera lógica para facilitar la navegación. (<a href="arquitectura-informacion.html">Ver más sobre IA</a>)</li>
+                    <li>**Diseño de Interacción (IxD):** Definir cómo el usuario interactúa con los elementos del sistema. (<a href="diseno-interaccion.html">Ver más sobre IxD</a>)</li>
+                    <li>**Usabilidad:** Facilidad de uso y eficiencia para completar tareas.</li>
+                    <li>**Accesibilidad:** Asegurar que el producto sea utilizable por personas con discapacidades.</li>
+                </ul>
+            </section>
+
+            <section id="proceso-ux">
+                <h2>4. El Proceso de Diseño UX</h2>
+                <p>El diseño UX es un proceso iterativo que generalmente incluye las siguientes fases:</p>
+                <ol>
+                    <li>**Investigación:** Entender al usuario y el problema.</li>
+                    <li>**Análisis:** Sintetizar la información y definir requisitos.</li>
+                    <li>**Diseño:** Crear soluciones (wireframes, prototipos).</li>
+                    <li>**Prueba:** Validar las soluciones con usuarios reales.</li>
+                    <li>**Implementación y Monitoreo:** Lanzar y seguir mejorando.</li>
+                </ol>
+                <p>Este proceso a menudo se superpone con metodologías como el <a href="design-thinking.html">Design Thinking</a>.</p>
+            </section>
+
+            <section id="dcu-relacion">
+                <h2>5. UX y Diseño Centrado en el Usuario</h2>
+                <p>El Diseño Centrado en el Usuario (DCU) es la filosofía central que impulsa la UX. Es una metodología que sitúa al usuario en el centro de todas las decisiones de diseño.</p>
             </section>
             
             <hr>
