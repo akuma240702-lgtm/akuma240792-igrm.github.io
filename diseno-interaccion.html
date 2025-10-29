@@ -14,13 +14,20 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li>
+                <li class="active"><a href="index.html#topics-grid-section" class="active">Temas</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-box">...</div>
-    </header>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+        </header>
 
     <main class="article-container">
         <aside class="toc-sidebar">
@@ -38,14 +45,39 @@
             <h1 id="definicion">Diseño de Interacción (IxD)</h1>
             <p class="intro-text">El Diseño de Interacción (IxD) es la disciplina que se enfoca en crear productos y servicios interactivos que sean útiles y usables, prestando especial atención a la forma en que los usuarios y la tecnología se comunican entre sí.</p>
 
+            <section>
+                <h2>1. ¿Qué es el IxD?</h2>
+                <p>El IxD se trata de definir los comportamientos del sistema y las respuestas del usuario. Un diseñador de interacción se pregunta: ¿Qué puede hacer el usuario? ¿Qué hace el sistema en respuesta? ¿Qué ocurre cuando el usuario hace clic o desliza?</p>
+                <p>La meta es crear una conversación digital fluida e intuitiva.</p>
+            </section>
+
             <section id="dimensiones">
                 <h2>2. Las Cinco Dimensiones del IxD</h2>
-                <p>El diseñador de interacción trabaja con cinco dimensiones para crear experiencias...</p>
-                </section>
+                <p>El diseñador de interacción trabaja con cinco dimensiones para crear experiencias:</p>
+                <ol>
+                    <li>**Palabras:** Textos de la interfaz (etiquetas, botones, mensajes de error).</li>
+                    <li>**Representaciones Visuales:** Elementos gráficos (imágenes, iconos, tipografía).</li>
+                    <li>**Objetos o Espacios Físicos:** El medio a través del cual el usuario interactúa (mouse, pantalla táctil).</li>
+                    <li>**Tiempo:** Cómo el usuario percibe la duración de la interacción (animaciones, *feedback* instantáneo).</li>
+                    <li>**Comportamiento:** La respuesta del producto (qué hace el sistema, cómo se siente el usuario).</li>
+                </ol>
+            </section>
+
+            <section id="principios-ixd">
+                <h2>3. Principios de Interacción</h2>
+                <ul>
+                    <li>**Visibilidad:** Las funciones deben ser obvias y fáciles de encontrar.</li>
+                    <li>**Feedback:** El sistema siempre debe informar al usuario sobre el resultado de su acción (p. ej., un botón cambia de color al hacer clic).</li>
+                    <li>**Restricciones:** Limitar las acciones del usuario para prevenir errores.</li>
+                </ul>
+                <p>El IxD es un componente vital de la <a href="experiencia-usuario.html">Experiencia de Usuario</a> general.</p>
+            </section>
         </article>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
