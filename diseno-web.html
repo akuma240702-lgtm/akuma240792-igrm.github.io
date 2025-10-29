@@ -14,13 +14,20 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li>
+                <li class="active"><a href="index.html#topics-grid-section" class="active">Temas</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-box">...</div>
-    </header>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+        </header>
 
     <main class="article-container">
         <aside class="toc-sidebar">
@@ -41,17 +48,34 @@
 
             <section>
                 <h2>1. Concepto y Pilares</h2>
-                <p>El diseño web abarca mucho más que solo la apariencia. Sus pilares incluyen la **usabilidad**, la **accesibilidad** y la **velocidad de carga**...</p>
+                <p>El diseño web abarca mucho más que solo la apariencia. Sus pilares incluyen la **usabilidad**, la **accesibilidad** y la **velocidad de carga**. Un diseño exitoso balancea las necesidades del usuario con los objetivos del proyecto.</p>
+                <ul>
+                    <li>**Estructura (HTML):** Define el contenido y su significado semántico.</li>
+                    <li>**Estilo (CSS):** Controla la presentación visual (colores, fuentes, diseño).</li>
+                    <li>**Comportamiento (JavaScript):** Agrega interactividad y lógica.</li>
+                </ul>
             </section>
-            
+
+            <section id="html-css">
+                <h2>2. La Dupla Esencial: HTML y CSS</h2>
+                <p>HTML (HyperText Markup Language) actúa como el esqueleto de la página, proporcionando la estructura y el contenido. CSS (Cascading Style Sheets) es la capa de piel y ropa, dictando la apariencia. Es fundamental separarlos para tener un código limpio y eficiente.</p>
+            </section>
+
             <section id="responsive">
                 <h2>3. El Diseño Responsive</h2>
-                <p>Hoy, más de la mitad del tráfico web proviene de dispositivos móviles. El **Diseño Responsive** es un enfoque que hace que el diseño se vea bien en todas las pantallas...</p>
+                <p>Hoy, más de la mitad del tráfico web proviene de dispositivos móviles. El **Diseño Responsive** es un enfoque que hace que el diseño se vea bien en todas las pantallas. Se logra principalmente con **Media Queries** en CSS y layouts flexibles, como los basados en Flexbox y Grid. Esto está estrechamente ligado a la <a href="experiencia-usuario.html">Experiencia de Usuario</a>.</p>
+            </section>
+            
+            <section id="herramientas">
+                <h2>4. Herramientas Clave</h2>
+                <p>Aunque un sitio se puede construir solo con un editor de texto, herramientas como Dreamweaver, Figma (para diseño) y VS Code (para código) agilizan el proceso.</p>
             </section>
         </article>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
