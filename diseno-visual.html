@@ -14,13 +14,20 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#topics-grid-section" class="active">Temas</a></li>
+                <li class="active"><a href="index.html#topics-grid-section" class="active">Temas</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-box">...</div>
-    </header>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+        </header>
 
     <main class="article-container">
         <aside class="toc-sidebar">
@@ -39,16 +46,41 @@
             <h1 id="definicion-visual">Diseño Visual</h1>
             <p class="intro-text">El Diseño Visual se centra en la estética y el aspecto final de un producto digital. Utiliza elementos como la tipografía, el color y el *layout* para mejorar la usabilidad, guiar al usuario y crear una identidad de marca coherente.</p>
 
+            <section>
+                <h2>1. El Rol del Diseño Visual</h2>
+                <p>Su función es doble: **estética** (hacer el producto atractivo) y **funcional** (usar el color y el espacio para dirigir la atención y señalar la jerarquía). Un diseño visual bien ejecutado reduce la carga cognitiva y fomenta la confianza del usuario.</p>
+            </section>
+
             <section id="elementos">
                 <h2>2. Elementos Clave</h2>
                 <ul>
                     <li>**Tipografía:** La elección de fuentes, tamaño y espaciado (legibilidad y jerarquía).</li>
-                    </ul>
+                    <li>**Color:** Paletas que evocan emociones y señalan interactividad (ej. verde para éxito, rojo para error).</li>
+                    <li>**Imágenes e Iconografía:** Elementos gráficos que comunican conceptos de forma rápida y universal.</li>
+                    <li>**Layout y Espacio en Blanco:** La disposición de los elementos. El espacio negativo ayuda a la concentración.</li>
+                </ul>
+            </section>
+
+            <section id="principios-visual">
+                <h2>3. Principios de Diseño (Gestalt)</h2>
+                <p>Los diseñadores visuales aplican principios de la psicología de la Gestalt para influir en la percepción del usuario:</p>
+                <ul>
+                    <li>**Proximidad:** Elementos cercanos se perciben como relacionados.</li>
+                    <li>**Similitud:** Objetos parecidos se perciben como parte de un grupo.</li>
+                    <li>**Jerarquía Visual:** Usar tamaño, color y contraste para indicar la importancia de los elementos.</li>
+                </ul>
+            </section>
+
+            <section id="dv-vs-ux">
+                <h2>4. Diseño Visual vs. UX/UI</h2>
+                <p>El Diseño Visual es la capa externa del producto. Colabora con el <a href="diseno-interaccion.html">Diseño de Interacción</a> (IxD) y se basa en la <a href="experiencia-usuario.html">Experiencia de Usuario</a> (UX). El **Diseño de Interfaz (UI)** es donde se unen estos dos, siendo el Diseño Visual el que determina el aspecto final de esos elementos interactivos.</p>
             </section>
         </article>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
