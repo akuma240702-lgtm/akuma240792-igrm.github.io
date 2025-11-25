@@ -3,29 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Gracias! | Wiki del Diseño Multimedia</title>
+    <title>¡Gracias por Contactarnos! | Wiki del Diseño Multimedia</title>
+    <meta name="description" content="Confirmación de que su mensaje ha sido enviado correctamente a la Wiki del Diseño Multimedia.">
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NZVLD4HD');</script>
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la página de agradecimiento */
+        .gracias-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .gracias-main h1 {
+            color: var(--color-secondary); /* Verde Azulado */
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .gracias-main p {
+            font-size: 1.2em;
+            color: var(--color-text);
+            max-width: 600px;
+        }
+        .gracias-main .btn-primary {
+            margin-top: 2em;
+        }
+    </style>
 </head>
 <body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZVLD4HD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="main-header">
         <div class="logo">WIKI</div>
-        <nav class="main-nav">...</nav>
-        <div class="search-box">...</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#topics-grid-section">Temas</a></li>
+                <li><a href="glosario.html">Glosario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar concepto...">
+                <button type="submit" id="search-button">🔍</button>
+            </form>
+            <div id="search-error" class="search-error-message"></div>
+        </div>
+
     </header>
 
-    <main class="contact-main">
-        <div class="container" style="max-width: 700px; padding-top: 150px; text-align: center;">
-            <h1>¡Mensaje Enviado con Éxito! 🎉</h1>
-            <p style="font-size: 1.3em; color: var(--color-text); margin-bottom: 30px;">
-                Agradecemos tu interés. Tu *feedback* es muy valioso para nosotros.
-            </p>
-            <p>
-                <a href="index.html" class="btn-primary" style="width: auto;">Volver a la Página Principal</a>
-            </p>
-        </div>
+    <main class="gracias-main">
+        <h1>¡Mensaje Enviado con Éxito!</h1>
+        <p>Agradecemos tu interés. Hemos recibido tu mensaje y lo revisaremos lo antes posible.</p>
+        <p>Tu *feedback* es muy importante para mejorar la Wiki del Diseño Multimedia.</p>
+        <a href="index.html" class="btn-primary">Volver a la Página Principal</a>
     </main>
 
-    <footer class="main-footer">...</footer>
+    <footer class="main-footer">
+        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
