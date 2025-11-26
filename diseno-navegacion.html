@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño de Navegación | Wiki del Diseño Multimedia</title>
-    <meta name="description" content="Guía sobre el Diseño de Navegación: tipos de navegación, patrones de usabilidad y su impacto en la experiencia del usuario.">
+    <title>Diseño de Navegación | Wiki Think</title>
+    <meta name="description" content="Tipos y principios del Diseño de Navegación, clave para la usabilidad y la experiencia de usuario.">
     
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NZVLD4HD');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ5T92QP9H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KZ5T92QP9H');
+    </script>
+
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZVLD4HD"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="main-header">
         <div class="logo">WIKI</div>
         <nav class="main-nav">
@@ -44,46 +46,26 @@
             <h4 class="sidebar-title">Contenido del Artículo</h4>
             <nav>
                 <ul>
-                    <li><a href="#fundamentos-nav">1. Fundamentos</a></li>
-                    <li><a href="#tipos-nav">2. Tipos de Sistemas</a></li>
-                    <li><a href="#patrones">3. Patrones de Usabilidad</a></li>
+                    <li><a href="#definicion">1. Concepto y Tipos</a></li>
+                    <li><a href="#principios">2. Principios de Usabilidad</a></li>
+                    <li><a href="#patrones">3. Patrones Comunes</a></li>
                 </ul>
             </nav>
         </aside>
 
         <article class="article-content">
-            <h1 id="fundamentos-nav">Diseño de Navegación</h1>
-            <p class="intro-text">El **Diseño de Navegación** se refiere a cómo los usuarios se mueven por un sitio web. Es la manifestación práctica de la <a href="arquitectura-informacion.html">Arquitectura de la Información</a>, buscando que el usuario siempre sepa dónde está, dónde ha estado y a dónde puede ir.</p>
+            <h1 id="definicion">Diseño de Navegación</h1>
+            <p class="intro-text">El **Diseño de Navegación** se refiere a la creación de la estructura y los elementos de interfaz que permiten al usuario moverse a través de un sitio web o aplicación de manera eficiente.</p>
 
             <section>
-                <h2>1. Fundamentos y Objetivos</h2>
-                <p>El principal objetivo de la navegación es la **encontrabilidad**. Una buena navegación es:</p>
-                <ul>
-                    <li>**Clara:** El significado del enlace es obvio.</li>
-                    <li>**Consistente:** La ubicación y el estilo del menú no cambian.</li>
-                    <li>**Eficiente:** Requiere el menor número de clics posible para llegar al destino.</li>
-                </ul>
-                <p>La navegación es una de las mayores influencias en la <a href="experiencia-usuario.html">Experiencia de Usuario</a>.</p>
-            </section>
+                <h2>1. Concepto y Tipos</h2>
+                <p>La navegación debe ser intuitiva y consistente. Tipos: Global, Local y Contextual.</p>
+                </section>
 
-            <section id="tipos-nav">
-                <h2>2. Tipos de Sistemas de Navegación</h2>
-                <ul>
-                    <li>**Global:** Persiste en todo el sitio (ej. el menú principal de esta wiki).</li>
-                    <li>**Local:** Muestra el contenido dentro de una sección o categoría específica (ej. submenús o la barra lateral TOC).</li>
-                    <li>**Contextual:** Enlaces incrustados en el cuerpo del texto que guían a contenido relacionado (ej. los enlaces entre los temas de esta wiki).</li>
-                    <li>**Suplementaria:** Mapas del sitio, índices alfabéticos o la barra de búsqueda.</li>
-                </ul>
-            </section>
-
-            <section id="patrones">
-                <h2>3. Patrones de Usabilidad Comunes</h2>
-                <ul>
-                    <li>**Breadcrumbs (Migas de Pan):** Muestra la ruta jerárquica hasta la ubicación actual del usuario.</li>
-                    <li>**Menú Hamburguesa:** Patrón común en el diseño <a href="diseno-web.html">responsive</a> para ocultar la navegación principal en dispositivos móviles.</li>
-                    <li>**Footer Navigation:** Repite enlaces importantes en la parte inferior de la página.</li>
-                </ul>
-            </section>
+            <section id="principios">
+                <h2>2. Principios de Usabilidad</h2>
+                <p>Consistencia, retroalimentación (feedback) y claridad son esenciales para una buena navegación.</p>
+                </section>
             
             <hr>
             <div class="navigation-links">
@@ -93,7 +75,7 @@
     </main>
 
     <footer class="main-footer">
-        <p>&copy; 2025 Grupo [Tu Nombre]. Proyecto Integrador.</p>
+        <p>&copy; 2025 Wiki Think. Proyecto Integrador.</p>
     </footer>
     <script src="main.js"></script>
 </body>
